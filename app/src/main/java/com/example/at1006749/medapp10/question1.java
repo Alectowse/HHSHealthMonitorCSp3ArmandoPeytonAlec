@@ -8,7 +8,7 @@ import android.view.MenuItem;
 /**
  * Created by 1006749 on 1/21/2016.
  */
-public class question1 {
+public class question1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
