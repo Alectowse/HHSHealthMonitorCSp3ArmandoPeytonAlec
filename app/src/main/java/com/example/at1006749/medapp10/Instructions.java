@@ -1,9 +1,8 @@
 package com.example.at1006749.medapp10;
 
-<<<<<<< HEAD
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-=======
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,20 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
->>>>>>> refs/remotes/origin/peyton
+
 
 /**
  * Created by 1006749 on 1/21/2016.
  */
-<<<<<<< HEAD
-public class Instructions extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.instructions_credits);
-    }
-=======
 public class Instructions extends Activity {
 
     private Button Next;
@@ -50,5 +40,5 @@ public class Instructions extends Activity {
         });
     }
 
->>>>>>> refs/remotes/origin/peyton
+}
 }
