@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TakeTest = (Button)rootView.findViewById(R.id.button2);
-        Instruct = (Button)rootView.findViewById(R.id.button);
+        TakeTest = (Button)findViewById(R.id.button2);
+        Instruct = (Button)findViewById(R.id.button);
 
         TakeTest.setOnClickListener(new View.OnClickListener() {
             @Override

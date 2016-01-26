@@ -21,17 +21,11 @@ public class question1 extends Activity {
 
     private Button Next;
 
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstancesState) {
-        View view = inflater.inflate(R.layout.question_1, container, false);
-        return view;
-
-
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.question_1);
 
-        Next = (Button) rootView.findViewById(R.id.button4);
+        Next = (Button)findViewById(R.id.button4);
 
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,4 +34,22 @@ public class question1 extends Activity {
             }
         });
     }
-}
+
+
+    }
+
+    /**
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.question_1);
+
+        Next = (Button)findViewById(R.id.button4);
+
+        Next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(question1.this, question2.class));
+            }
+        });
+    }*/

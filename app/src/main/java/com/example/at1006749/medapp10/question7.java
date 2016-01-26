@@ -28,9 +28,10 @@ public class question7 extends Activity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-        Next = (Button) rootView.findViewById(R.id.button11);
+        Next = (Button)findViewById(R.id.button11);
 
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
