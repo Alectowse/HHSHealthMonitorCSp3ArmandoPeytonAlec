@@ -21,6 +21,7 @@ public class question1 extends Activity {
 
     private Button Next;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_1);
@@ -35,8 +36,7 @@ public class question1 extends Activity {
         });
     }
 
-
-    }
+}
 
     /**
     @Override
@@ -52,4 +52,5 @@ public class question1 extends Activity {
                 startActivity(new Intent(question1.this, question2.class));
             }
         });
-    }*/
+    }
+     */

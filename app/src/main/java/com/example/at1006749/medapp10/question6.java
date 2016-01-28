@@ -20,16 +20,11 @@ public class question6 extends Activity {
 
     private Button Next;
 
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstancesState) {
-        View view = inflater.inflate(R.layout.question_6, container, false);
-        return view;
-
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.question_6);
 
         Next = (Button)findViewById(R.id.button8);
 

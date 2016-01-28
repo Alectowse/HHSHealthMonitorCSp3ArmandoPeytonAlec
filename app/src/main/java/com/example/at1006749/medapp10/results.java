@@ -20,18 +20,12 @@ public class results extends Activity {
 
     private Button Next;
 
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstancesState) {
-        View view = inflater.inflate(R.layout.results, container, false);
-        return view;
-
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.results);
 
-        Next = (Button)findViewById(R.id.button4);
+        Next = (Button)findViewById(R.id.button12);
 
         Next.setOnClickListener(new View.OnClickListener() {
             @Override

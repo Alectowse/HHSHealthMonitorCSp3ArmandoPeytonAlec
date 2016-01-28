@@ -1,6 +1,5 @@
 package com.example.at1006749.medapp10;
 
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
@@ -20,18 +19,12 @@ public class Instructions extends Activity {
 
     private Button Next;
 
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstancesState) {
-        View view = inflater.inflate(R.layout.instructions_credits, container, false);
-        return view;
-
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.instructions_credits);
 
-        Next = (Button)findViewById(R.id.button4);
+        Next = (Button)findViewById(R.id.button3);
 
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
