@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Created by 1006749 on 1/21/2016.
@@ -19,11 +20,15 @@ import android.widget.Button;
 public class results extends Activity {
 
     private Button Next;
+    private TextView fin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.results);
+
+        fin = (TextView)findViewById(R.id.textView11);
+        fin.setText(MainActivity.counter);
 
         Next = (Button)findViewById(R.id.button12);
 
