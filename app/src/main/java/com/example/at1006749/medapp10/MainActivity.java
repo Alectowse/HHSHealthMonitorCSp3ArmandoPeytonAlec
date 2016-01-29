@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         TakeTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                counter = 0;
                 startActivity(new Intent(MainActivity.this, question1.class));
             }
         });

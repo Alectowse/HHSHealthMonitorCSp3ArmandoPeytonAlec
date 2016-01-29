@@ -27,8 +27,11 @@ public class results extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.results);
 
+        String Score = "0";
+
         fin = (TextView)findViewById(R.id.textView11);
-        fin.setText(MainActivity.counter);
+        Score = Integer.toString(MainActivity.counter);
+        fin.setText(Score);
 
         Next = (Button)findViewById(R.id.button12);
 
