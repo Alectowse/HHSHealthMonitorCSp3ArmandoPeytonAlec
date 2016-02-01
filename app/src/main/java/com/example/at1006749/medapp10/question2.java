@@ -40,8 +40,41 @@ public class question2 extends Activity {
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (dchar == WorldH.charAt(0)){
+                if (dchar == WorldH.charAt(0)) {
                     MainActivity.counter++;
+                    if (lchar == WorldH.charAt(1)) {
+                        MainActivity.counter++;
+                        if (rchar == WorldH.charAt(2)) {
+                            MainActivity.counter++;
+                            if (ochar == WorldH.charAt(3)) {
+                                MainActivity.counter++;
+                                if (wchar == WorldH.charAt(4)) {
+                                    MainActivity.counter++;
+                                }
+                            }
+                        }
+                    } else if (rchar == WorldH.charAt(2)) {
+                        MainActivity.counter++;
+                        if (ochar == WorldH.charAt(3)) {
+                            MainActivity.counter++;
+                        }
+                    } else if (ochar == WorldH.charAt(3)) {
+                        MainActivity.counter++;
+                    } else if (lchar == WorldH.charAt(1)) {
+                        MainActivity.counter++;
+                        if (rchar == WorldH.charAt(2)) {
+                            MainActivity.counter++;
+                        }
+                    } else if (rchar == WorldH.charAt(2)) {
+                        MainActivity.counter++;
+                    } else if (ochar == WorldH.charAt(3)) {
+                        MainActivity.counter++;
+                        if (wchar == WorldH.charAt(4)) {
+                            MainActivity.counter++;
+                        }
+                    } else if (wchar == WorldH.charAt(4)) {
+                        MainActivity.counter++;
+                    }
                 }
                 startActivity(new Intent(question2.this, question3.class));
             }
