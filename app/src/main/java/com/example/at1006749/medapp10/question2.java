@@ -48,33 +48,88 @@ public class question2 extends Activity {
                             MainActivity.counter++;
                             if (ochar == WorldH.charAt(3)) {
                                 MainActivity.counter++;
-                                if (wchar == WorldH.charAt(4)) {
+                                if (wchar == WorldH.charAt(4)) { //dlrow
+                                    MainActivity.counter++;
+                                }
+                            }
+                            else if (wchar == WorldH.charAt(4)){ // dl-rw
+                                MainActivity.counter++;
+                            }
+                        }
+                        else if (ochar == WorldH.charAt(3)) {
+                            MainActivity.counter++;
+                            if (wchar == WorldH.charAt(4)) { //d-low
+                                MainActivity.counter++;
+                            }
+                        }
+                        else if (wchar == WorldH.charAt(4)){ //d-l-w
+                            MainActivity.counter++;
+                        }
+                    }
+                    else  if (rchar == WorldH.charAt(2)) {
+                        MainActivity.counter++;
+                        if (ochar == WorldH.charAt(3)) {
+                            MainActivity.counter++;
+                            if (wchar == WorldH.charAt(4)) { //d-row
+                                MainActivity.counter++;
+                            }
+                        }
+                        else if (wchar == WorldH.charAt(4)) { //d-r-w
+                            MainActivity.counter++;
+                        }
+                    }
+                    else if (ochar == WorldH.charAt(3)) {
+                        MainActivity.counter++;
+                        if (wchar == WorldH.charAt(4)) { //d--ow
+                            MainActivity.counter++;
+                        }
+                    }
+                    else if (wchar == WorldH.charAt(4)){ //d---w
+                        MainActivity.counter++;
+                    }
+                }
+                else if (lchar == WorldH.charAt(1)) { //Tree complete
+                        MainActivity.counter++;
+                        if (rchar == WorldH.charAt(2)){
+                            MainActivity.counter++;
+                            if (ochar == WorldH.charAt(3)) {
+                                MainActivity.counter++;
+                                if (wchar == WorldH.charAt(4)) { //-lrow
                                     MainActivity.counter++;
                                 }
                             }
                         }
-                    } else if (rchar == WorldH.charAt(2)) {
-                        MainActivity.counter++;
-                        if (ochar == WorldH.charAt(3)) {
+                        else if (ochar == WorldH.charAt(3)){
+                            MainActivity.counter++;
+                            if (wchar == WorldH.charAt(4)){ //-l-ow
+                                MainActivity.counter++;
+                            }
+                        }
+                        else if (wchar == WorldH.charAt(4)){ //-l--w
                             MainActivity.counter++;
                         }
-                    } else if (ochar == WorldH.charAt(3)) {
+                }
+                else if (rchar == WorldH.charAt(2)) { //Tree complete
                         MainActivity.counter++;
-                    } else if (lchar == WorldH.charAt(1)) {
-                        MainActivity.counter++;
-                        if (rchar == WorldH.charAt(2)) {
+                    if (ochar == WorldH.charAt(3)) {
+                            MainActivity.counter++;
+                        if (wchar == WorldH.charAt(4)) { //--row
+                                MainActivity.counter++;
+                            }
+                        }
+                    else if (wchar == WorldH.charAt(4)){ //--r-w
                             MainActivity.counter++;
                         }
-                    } else if (rchar == WorldH.charAt(2)) {
-                        MainActivity.counter++;
-                    } else if (ochar == WorldH.charAt(3)) {
-                        MainActivity.counter++;
-                        if (wchar == WorldH.charAt(4)) {
-                            MainActivity.counter++;
-                        }
-                    } else if (wchar == WorldH.charAt(4)) {
+                    }
+                else if (ochar == WorldH.charAt(3)) { //Tree complete
+                    MainActivity.counter++;
+                    if (wchar == WorldH.charAt(4)) { //---ow
                         MainActivity.counter++;
                     }
+                }
+                    else if (wchar == WorldH.charAt(4)) { //Tree complete
+                        MainActivity.counter++; //----w
+
                 }
                 startActivity(new Intent(question2.this, question3.class));
             }
